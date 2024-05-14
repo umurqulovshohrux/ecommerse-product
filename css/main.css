@@ -1,0 +1,265 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --primary-white: #FFF;
+    --primary-black: #000;
+    --KumbhSans: "KumbhSans";
+}
+
+.container {
+    width: 1440px;
+    padding: 28px 165px 132px 165px;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: var(--KumbhSans);
+    overflow-x: hidden;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-nav-list {
+    display: flex;
+    column-gap: 32px;
+}
+
+.first-nav-link {
+    color: #69707D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    transition: .5s;
+}
+
+.first-nav-link::after {
+    content: "";
+    display: block;
+    transition: .5s;
+    max-width: 58px;
+    height: 4px;
+    background: #FF7E1B;
+    transform: translateY(45px);
+    width: 0%;
+}
+
+.first-nav-link:hover::after{
+    width: 100%;
+}
+
+.first-nav-link:active {
+    color: #1D2026;
+}
+
+.first-nav-link-logo {
+    padding-right: 24px;
+}
+
+.second-nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 46px;
+}
+
+.line {
+    display: block;
+    width: 1110px;
+    height: 1px;
+    background: #E4E9F2;
+    margin-top: 34px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-image {
+    width: 445px;
+    height: 445px;
+    border-radius: 15px;
+}
+
+.images-list {
+    display: flex;
+    column-gap: 31px;
+    padding-top: 32px;
+}
+
+.images-link-img {
+    width: 88px;
+    height: 88px;
+    border-radius: 10px;
+}
+
+.about {
+    padding-left: 125px;
+    margin-top: 62px;
+}
+
+.about-title-desc {
+    color: #FF7E1B;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 27px;
+}
+
+.about-title {
+    color: #1D2026;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-bottom: 32px;
+}
+
+.about-desc {
+    max-width: 445px;
+    width: 100%;
+    color: #69707D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 28px;
+}
+
+.cost {
+    color: #1D2026;
+    font-size: 28px;
+    font-weight: 700;
+    align-items: center;
+    padding-bottom: 55px;
+}
+
+.sale {
+    color: #FF7E1B;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    background: #FFEEE2;
+    padding: 4px 8px;
+}
+
+.defoult-cost {
+    color: #B6BCC8;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration-line: line-through;
+}
+
+.btns {
+    display: flex;
+    column-gap: 10px;
+}
+
+.how {
+    display: flex;
+    padding: 17px 25px;
+    column-gap: 35px;
+    border-radius: 10px;
+    background: #F6F8FD;
+    align-items: center;
+}
+
+.minus-btn {
+    padding-bottom: 5px;
+}
+
+.all-btn {
+    padding: 17px 76px;
+    color: var(--primary-white);
+    font-size: 16px;
+    font-weight: 700;
+    background: #FF7E1B;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px -20px #FF7E1B;
+    transition: .5s;
+}
+
+.all-btn:active {
+    background-color: #FFAB6A;
+}
+
+.images-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-active {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    opacity: .5;
+    border: 3px solid #FF7E1B;
+    border-radius: 10px;
+}
+
+.second-nav-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-box {
+    width: 360px;
+    height: 256px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.50);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(900px, 170px);
+    display: none;
+}
+
+.empty-cart-text {
+    color: #69707D;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
